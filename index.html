@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TimeSpace - A collection of powerful AI and non-AI tools accessible in one click.">
+    <title>TimeSpace - All-in-One Tools</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #4A90E2;
+            color: white;
+            padding: 15px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .tool-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+        .tool-box {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .tool-box:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background: #4A90E2;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+        button:hover {
+            background: #357ABD;
+        }
+        footer {
+            background: #4A90E2;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TimeSpace</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to TimeSpace, your go-to hub for powerful AI and non-AI tools. Experience seamless, one-click access to productivity-enhancing utilities.</p>
+    </section>
+    
+    <section id="tools">
+        <h2>Tools</h2>
+        <div class="tool-grid">
+            <div class="tool-box"><button onclick="generateQR()">QR Code Generator</button></div>
+            <div class="tool-box"><button onclick="convertPDF()">PDF Converter</button></div>
+            <div class="tool-box"><button onclick="textToSpeech()">Text to Speech</button></div>
+            <div class="tool-box"><button onclick="aiImageGenerator()">AI Image Generator</button></div>
+            <div class="tool-box"><button onclick="passwordGenerator()">Password Generator</button></div>
+            <div class="tool-box"><button onclick="bmiCalculator()">BMI Calculator</button></div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 TimeSpace. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function generateQR() { alert("QR Code Generator Activated"); }
+        function convertPDF() { alert("PDF Converter Activated"); }
+        function textToSpeech() { alert("Text to Speech Activated"); }
+        function aiImageGenerator() { alert("AI Image Generator Activated"); }
+        function passwordGenerator() { alert("Password Generator Activated"); }
+        function bmiCalculator() { alert("BMI Calculator Activated"); }
+    </script>
+</body>
+</html>
